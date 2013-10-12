@@ -1,0 +1,264 @@
+<form action="https://www.mturk.com/mturk/externalSubmit" id="mturk_form" method="post" name="mturk_form"><input id="assignmentId" name="assignmentId" type="hidden" value="" />
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="left" style="padding-left:24px;" width="16%">Age</td>
+			<td width="30%"><input id="Age" name="Age" style="width:41px; height:32px; border:solid 1px #000" type="text" /></td>
+			<td align="center" width="27%">
+			<div id="artist1" name="Artist_1" style="width:164px; height:65px; border:solid 1px #000000; border-radius:10px; line-height:65px; font-size:16px">&nbsp;</div>
+			</td>
+			<td align="center" width="27%">
+			<div id="artist2" name="Artist_2" style="width:174px; height:65px; border:solid 1px #000000; border-radius:10px; line-height:65px; font-size:16px">&nbsp;</div>
+			</td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td align="left" style="padding-left:24px;">Gender</td>
+			<td><input id="gender1" name="Gender" type="radio" validate="required:true" value="female" /> <label for="radio1" style="cursor:pointer">Female</label> <input id="gender2" name="Gender" type="radio" value="male" /> <label for="radio2" style="cursor:pointer">Male</label></td>
+			<td align="center" id="first_image" style="padding-top:9px">&nbsp;</td>
+			<td align="center" id="second_image" style="padding-top:9px">&nbsp;</td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Fun</b>&quot;</td>
+			<td align="center"><input id="fusel1" name="CFun" onclick="onClicked( '11' );" type="radio" /> <input id="Fun1" name="Radio_Fun_1" onclick="onClicked( '11' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+			<td align="center"><input id="fusel2" name="CFun" onclick="onClicked( '12' );" type="radio" /> <input id="Fun2" name="Radio_Fun_2" onclick="onClicked( '12' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Exciting</b>&quot;</td>
+			<td align="center"><input id="exsel1" name="CExciting" onclick="onClicked( '21' );" type="radio" /> <input id="Exciting1" name="Radio_Exciting_1" onclick="onClicked( '21' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+			<td align="center"><input id="exsel2" name="CExciting" onclick="onClicked( '22' );" type="radio" /> <input id="Exciting2" name="Radio_Exciting_2" onclick="onClicked( '22' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Authentic</b>&quot;</td>
+			<td align="center"><input id="ausel1" name="CAuthentic" onclick="onClicked( '31' );" type="radio" /> <input id="Authentic1" name="Radio_Authentic_1" onclick="onClicked( '31' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+			<td align="center"><input id="ausel2" name="CAuthentic" onclick="onClicked( '32' );" type="radio" /> <input id="Authentic2" name="Radio_Authentic_2" onclick="onClicked( '32' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Thrilling</b>&quot;</td>
+			<td align="center"><input id="thsel1" name="CThrilling" onclick="onClicked( '41' );" type="radio" /> <input id="Thrilling1" name="Radio_Thrilling_1" onclick="onClicked( '41' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+			<td align="center"><input id="thsel2" name="CThrilling" onclick="onClicked( '42' );" type="radio" /> <input id="Thrilling2" name="Radio_Thrilling_2" onclick="onClicked( '42' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Daring</b>&quot;</td>
+			<td align="center"><input id="dasel1" name="CDaring" onclick="onClicked( '51' );" type="radio" /> <input id="Daring1" name="Radio_Daring_1" onclick="onClicked( '51' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+			<td align="center"><input id="dasel2" name="CDaring" onclick="onClicked( '52' );" type="radio" /> <input id="Daring2" name="Radio_Daring_2" onclick="onClicked( '52' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Skilled</b>&quot;</td>
+			<td align="center"><input id="sksel1" name="CSkilled" onclick="onClicked( '61' );" type="radio" /> <input id="Skilled1" name="Radio_Skilled_1" onclick="onClicked( '61' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+			<td align="center"><input id="sksel2" name="CSkilled" onclick="onClicked( '62' );" type="radio" /> <input id="Skilled2" name="Radio_Skilled_2" onclick="onClicked( '62' );" style="display:none;" type="radio" value="on (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">&nbsp;</td>
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px"><input id="submitButton" onclick="checkvalidation();" type="button" value="Submit" /></td>
+		</tr>
+	</tbody>
+</table>
+<script type="text/javascript" language="javascript">
+
+window.onload=function(){ first_title(); };
+
+function onClicked( id ){
+	var artist1_name = document.getElementById("artist1").innerHTML;
+	var artist2_name = document.getElementById("artist2").innerHTML;
+
+	if( id == '11' ){
+		document.getElementById('Fun1').checked = true;
+		document.getElementById('Fun2').checked = true;
+		document.getElementById('Fun1').value = "on (" + artist1_name +")";
+		document.getElementById('Fun2').value = "off (" + artist2_name +")";
+		document.getElementById('fusel1').checked = true;
+		document.getElementById('fusel2').checked = false;
+	} else if( id == '12' ){
+		document.getElementById('Fun1').checked = true;
+		document.getElementById('Fun2').checked = true;
+		document.getElementById('Fun1').value = "off (" + artist1_name +")";
+		document.getElementById('Fun2').value = "on (" + artist2_name +")";
+		document.getElementById('fusel2').checked = true;
+		document.getElementById('fusel1').checked = false;
+	} else if( id == '21' ){
+		document.getElementById('Exciting1').checked = true;
+		document.getElementById('Exciting2').checked = true;
+		document.getElementById('Exciting1').value = "on (" + artist1_name +")";
+		document.getElementById('Exciting2').value = "off (" + artist2_name +")";
+		document.getElementById('exsel1').checked = true;
+		document.getElementById('exsel2').checked = false;
+	} else if( id == '22' ){
+		document.getElementById('Exciting1').checked = true;
+		document.getElementById('Exciting2').checked = true;
+		document.getElementById('Exciting1').value = "off (" + artist1_name +")";
+		document.getElementById('Exciting2').value = "on (" + artist2_name +")";
+		document.getElementById('exsel2').checked = true;
+		document.getElementById('exsel1').checked = false;
+	} else if( id == '31' ){
+		document.getElementById('Authentic1').checked = true;
+		document.getElementById('Authentic2').checked = true;
+		document.getElementById('Authentic1').value = "on (" + artist1_name +")";
+		document.getElementById('Authentic2').value = "off (" + artist2_name +")";
+		document.getElementById('ausel1').checked = true;
+		document.getElementById('ausel2').checked = false;
+	} else if( id == '32' ){
+		document.getElementById('Authentic1').checked = true;
+		document.getElementById('Authentic2').checked = true;
+		document.getElementById('Authentic1').value = "off (" + artist1_name +")";
+		document.getElementById('Authentic2').value = "on (" + artist2_name +")";
+		document.getElementById('ausel2').checked = true;
+		document.getElementById('ausel1').checked = false;
+	} else if( id == '41' ){
+		document.getElementById('Thrilling1').checked = true;
+		document.getElementById('Thrilling2').checked = true;
+		document.getElementById('Thrilling1').value = "on (" + artist1_name +")";
+		document.getElementById('Thrilling2').value = "off (" + artist2_name +")";
+		document.getElementById('thsel1').checked = true;
+		document.getElementById('thsel2').checked = false;
+	} else if( id == '42' ){
+		document.getElementById('Thrilling1').checked = true;
+		document.getElementById('Thrilling2').checked = true;
+		document.getElementById('Thrilling1').value = "off (" + artist1_name +")";
+		document.getElementById('Thrilling2').value = "on (" + artist2_name +")";
+		document.getElementById('thsel2').checked = true;
+		document.getElementById('thsel1').checked = false;
+	} else if( id == '51' ){
+		document.getElementById('Daring1').checked = true;
+		document.getElementById('Daring2').checked = true;
+		document.getElementById('Daring1').value = "on (" + artist1_name +")";
+		document.getElementById('Daring2').value = "off (" + artist2_name +")";
+		document.getElementById('dasel1').checked = true;
+		document.getElementById('dasel2').checked = false;
+	} else if( id == '52' ){
+		document.getElementById('Daring1').checked = true;
+		document.getElementById('Daring2').checked = true;
+		document.getElementById('Daring1').value = "off (" + artist1_name +")";
+		document.getElementById('Daring2').value = "on (" + artist2_name +")";
+		document.getElementById('dasel2').checked = true;
+		document.getElementById('dasel1').checked = false;
+	} else if( id == '61' ){
+		document.getElementById('Skilled1').checked = true;
+		document.getElementById('Skilled2').checked = true;
+		document.getElementById('Skilled1').value = "on (" + artist1_name +")";
+		document.getElementById('Skilled2').value = "off (" + artist2_name +")";
+		document.getElementById('sksel1').checked = true;
+		document.getElementById('sksel2').checked = false;
+	} else if( id == '62' ){
+		document.getElementById('Skilled1').checked = true;
+		document.getElementById('Skilled2').checked = true;
+		document.getElementById('Skilled1').value = "off (" + artist1_name +")";
+		document.getElementById('Skilled2').value = "on (" + artist2_name +")";
+		document.getElementById('sksel2').checked = true;
+		document.getElementById('sksel1').checked = false;
+	}
+}
+function first_title(){		
+	var rand_number = 0;
+	rand_number1 = Math.floor((Math.random()*10));
+	rand_number2 = Math.floor((Math.random()*10));
+	if( rand_number1 == rand_number2 ){
+		rand_number2 = Math.floor((Math.random()*10));
+	}
+	if( rand_number1 == rand_number2 ){
+		if( rand_number2 < 7 )
+			rand_number2 = rand_number2 + 2;
+		else
+			rand_number2 = rand_number2 - 2;
+	}
+	document.getElementById("artist1").innerHTML = random_artist( rand_number1 );
+	document.getElementById("artist2").innerHTML = random_artist( rand_number2 );
+	document.getElementById("first_image").innerHTML = "<img src='" + random_image( rand_number1 ) + "' width='165px'/>";
+	document.getElementById("second_image").innerHTML = "<img src='" + random_image( rand_number2 ) + "' width='165px'/>";	
+}
+
+function random_image( rand_number ) {
+	image = new Array(10);
+	image[0] = 'http://crescentmoonentertainment.com/bands/245/John-King-Big.jpg';
+	image[1] = 'http://www.seethemuzic.com/wp-content/uploads/2013/06/Craig-Morgan-performing-at-The-Downtown-Hoedown-Detroit-MI-June-1st-2013-photo-by-Marc-Nader-1089.jpg';
+	image[2] = 'http://americanidol.edogo.com/wp-content/uploads/2010/06/kelliepickler4.jpg';
+	image[3] = 'http://4.bp.blogspot.com/-qFeuNdeUaVQ/TazZfg57H1I/AAAAAAAABxA/zPXYZH_mdSM/s640/DSC_4596.jpg';
+	image[4] = 'http://nashvillemusicminute.files.wordpress.com/2010/02/nmm_taylor-2.jpg';
+	image[5] = 'http://images2.fanpop.com/image/photos/12100000/Rascal-Flatts-ACM-awards-Performance-rascal-flatts-12135608-610-407.jpg';
+	image[6] = 'http://www.countrymusicislove.com/wp-content/uploads/2013/07/Danielle-Bradbery-CountryMusicIsLove2.jpg';
+	image[7] = 'http://cache4.asset-cache.net/gc/167986853-laura-bell-bundy-performs-during-the-2013-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=GkZZ8bf5zL1ZiijUmxa7QZ%2F0%2FhozZLvojvrgzCSYXU7TuGp%2B4z7i6PGoEvMXUn0ZWMdUGyNRLRj20N7OVYrLIw%3D%3D';
+	image[8] = 'http://wac.450f.edgecastcdn.net/80450F/kicks105.com/files/2013/03/cadillac-three.png';
+	image[9] = 'http://www.vegasnews.com/wp-content/uploads/6_7_11_C_tim_mcgraw_kabik-62-1-588.jpg';
+ 	return(image[rand_number]);
+ }
+
+ function random_artist( rand_number ) {
+	artist = new Array(10);
+	artist[0] = 'The John King Band';
+	artist[1] = 'Craig Morgan';
+	artist[2] = 'Kellie Pickler';
+	artist[3] = 'Glen Templeton';
+	artist[4] = 'Taylor Swift';
+	artist[5] = 'Rascal Flatts';
+	artist[6] = 'Danielle Bradbery';
+	artist[7] = 'Laura Bell Bundy';
+	artist[8] = 'The Cadillac Three';
+	artist[9] = 'Tim McGraw';
+ 	return(artist[rand_number]);
+ }
+function valButton(btn) {
+var cnt = -1;
+for (var i=btn.length-1; i > -1; i--) {
+   if (btn[i].checked) {cnt = i; i = -1;}
+   }
+	if (cnt > -1) return btn[cnt].value;
+	else return null;
+}
+function valForm(form) {
+	var btn1 = valButton(form.Gender);
+	var btn2 = valButton(form.CFun);
+	var btn3 = valButton(form.CExciting);
+	var btn4 = valButton(form.CAuthentic);
+	var btn5 = valButton(form.CThrilling);
+	var btn6 = valButton(form.CDaring);
+	var btn7 = valButton(form.CSkilled);
+
+	if (btn1 == null)
+	{	
+		alert('select your Gender');
+		return false;
+	}else if (btn2 == null)
+	{	
+		alert('select your Fun');
+		return false;
+	}else if (btn3 == null)
+	{	
+		alert('select your Exciting');
+		return false;
+	}else if (btn4 == null)
+	{	
+		alert('select your Authentic');
+		return false;
+	}else if (btn5 == null)
+	{	
+		alert('select your Thrilling');
+		return false;
+	}else if (btn6 == null)
+	{	
+		alert('select your Daring');
+		return false;
+	}else if (btn7 == null)
+	{	
+		alert('select your Skilled');
+		return false;
+	}else
+		return true;
+}
+
+  function checkvalidation(){
+	var objcomment = document.getElementById("Age");
+	if(objcomment.value == "")
+	{
+		alert("Please input your age.");
+		return;
+	}
+    val = valForm(mturk_form);
+	if(val == false)
+		return;
+	var obj = document.getElementById("mturk_form");
+	
+	
+	obj.action = "https://www.mturk.com/mturk/externalSubmit";
+	obj.submit();
+  }
+  turkSetAssignmentID();
+  </script></form>
