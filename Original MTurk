@@ -1,0 +1,227 @@
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="left" style="padding-left:24px;" width="16%">Age</td>
+			<td width="30%"><input name="Age" style="width:41px; height:32px; border:solid 1px #000" type="text" /></td>
+			<td align="center" width="27%">
+			<div id="artist1" name="Artist_1" style="width:164px; height:65px; border:solid 1px #000000; border-radius:10px; line-height:65px; font-size:16px">&nbsp;</div>
+			</td>
+			<td align="center" width="27%">
+			<div id="artist2" name="Artist_2" style="width:174px; height:65px; border:solid 1px #000000; border-radius:10px; line-height:65px; font-size:16px">&nbsp;</div>
+			</td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td align="left" style="padding-left:24px;">Gender</td>
+			<td><input id="gender1" name="Gender" type="radio" value="female" /> <label for="radio1" style="cursor:pointer">Female</label> &nbsp;&nbsp;&nbsp; <input id="gender2" name="Gender" type="radio" value="male" /> <label for="radio2" style="cursor:pointer">Male</label></td>
+			<td align="center" id="first_image" style="padding-top:9px">&nbsp;</td>
+			<td align="center" id="second_image" style="padding-top:9px">&nbsp;</td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Trendy</b>&quot;</td>
+			<td align="center"><input id="trendy1" name="Radio_Trendy_1" onclick="onClicked( '11' );" type="radio" value="off (No Selected)" /></td>
+			<td align="center"><input id="trendy2" name="Radio_Trendy_2" onclick="onClicked( '12' );" type="radio" value="off (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Cool</b>&quot;</td>
+			<td align="center"><input id="cool1" name="Radio_Cool_1" onclick="onClicked( '21' );" type="radio" value="off (No Selected)" /></td>
+			<td align="center"><input id="cool2" name="Radio_Cool_2" onclick="onClicked( '22' );" type="radio" value="off (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Credible</b>&quot;</td>
+			<td align="center"><input id="crediable1" name="Radio_Crediable_1" onclick="onClicked( '31' );" type="radio" value="off (No Selected)" /></td>
+			<td align="center"><input id="crediable2" name="Radio_Crediable_2" onclick="onClicked( '32' );" type="radio" value="off (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Likeable</b>&quot;</td>
+			<td align="center"><input id="likable1" name="Radio_Likeable_1" onclick="onClicked( '41' );" type="radio" value="off (No Selected)" /></td>
+			<td align="center"><input id="likable2" name="Radio_Likeable_2" onclick="onClicked( '42' );" type="radio" value="off (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Glamorous</b>&quot;</td>
+			<td align="center"><input id="glamorous1" name="Radio_Glamorous_1" onclick="onClicked( '51' );" type="radio" value="off (No Selected)" /></td>
+			<td align="center"><input id="glamorous2" name="Radio_Glamorous_2" onclick="onClicked( '52' );" type="radio" value="off (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">Who is more &quot;<b>Daring</b>&quot;</td>
+			<td align="center"><input id="daring1" name="Radio_Daring_1" onclick="onClicked( '61' );" type="radio" value="off (No Selected)" /></td>
+			<td align="center"><input id="daring2" name="Radio_Daring_2" onclick="onClicked( '62' );" type="radio" value="off (No Selected)" /></td>
+		</tr>
+		<tr style="vertical-align:middle;">
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px">&nbsp;</td>
+			<td align="center" colspan="2" style="padding-top:10px; padding-bottom:10px"><input onclick="javascript:alert('Submit Clicked');" style="border:solid 1px #000000; border-radius:10px; background-color:#979797; font-weight:bold; color:#000000; font-size:16px; width:140px; height:50px; cursor:pointer" type="submit" value="Submit" /></td>
+		</tr>
+		<script type="text/javascript" language="javascript">
+
+window.onload=function(){ first_title(); };
+
+function onClicked( id ){
+	var artist1_name = document.getElementById("artist1").innerHTML;
+	var artist2_name = document.getElementById("artist2").innerHTML;
+	
+	if( id == '11' ){
+		document.getElementById('trendy1').checked = true;
+		document.getElementById('trendy2').checked = false;
+		document.getElementById('trendy1').value = "on (" + artist1_name +")";
+		document.getElementById('trendy2').value = "off (" + artist2_name +")";
+	} else if( id == '12' ){
+		document.getElementById('trendy1').checked = false;
+		document.getElementById('trendy2').checked = true;
+		document.getElementById('trendy1').value = "off (" + artist1_name +")";
+		document.getElementById('trendy2').value = "on (" + artist2_name +")";
+	} else if( id == '21' ){
+		document.getElementById('cool1').checked = true;
+		document.getElementById('cool2').checked = false;
+		document.getElementById('cool1').value = "on (" + artist1_name +")";
+		document.getElementById('cool2').value = "off (" + artist2_name +")";
+	} else if( id == '22' ){
+		document.getElementById('cool1').checked = false;
+		document.getElementById('cool2').checked = true;
+		document.getElementById('cool1').value = "off (" + artist1_name +")";
+		document.getElementById('cool2').value = "on (" + artist2_name +")";
+	} else if( id == '31' ){
+		document.getElementById('crediable1').checked = true;
+		document.getElementById('crediable2').checked = false;
+		document.getElementById('crediable1').value = "on (" + artist1_name +")";
+		document.getElementById('crediable2').value = "off (" + artist2_name +")";
+	} else if( id == '32' ){
+		document.getElementById('crediable1').checked = false;
+		document.getElementById('crediable2').checked = true;
+		document.getElementById('crediable1').value = "off (" + artist1_name +")";
+		document.getElementById('crediable2').value = "on (" + artist2_name +")";
+	} else if( id == '41' ){
+		document.getElementById('likable1').checked = true;
+		document.getElementById('likable2').checked = false;
+		document.getElementById('likable1').value = "on (" + artist1_name +")";
+		document.getElementById('likable2').value = "off (" + artist2_name +")";
+	} else if( id == '42' ){
+		document.getElementById('likable1').checked = false;
+		document.getElementById('likable2').checked = true;
+		document.getElementById('likable1').value = "off (" + artist1_name +")";
+		document.getElementById('likable2').value = "on (" + artist2_name +")";
+	} else if( id == '51' ){
+		document.getElementById('glamorous1').checked = true;
+		document.getElementById('glamorous2').checked = false;
+		document.getElementById('glamorous1').value = "on (" + artist1_name +")";
+		document.getElementById('glamorous2').value = "off (" + artist2_name +")";
+	} else if( id == '52' ){
+		document.getElementById('glamorous1').checked = false;
+		document.getElementById('glamorous2').checked = true;
+		document.getElementById('glamorous1').value = "off (" + artist1_name +")";
+		document.getElementById('glamorous2').value = "on (" + artist2_name +")";
+	} else if( id == '61' ){
+		document.getElementById('daring1').checked = true;
+		document.getElementById('daring2').checked = false;
+		document.getElementById('daring1').value = "on (" + artist1_name +")";
+		document.getElementById('daring2').value = "off (" + artist2_name +")";
+	} else if( id == '62' ){
+		document.getElementById('daring1').checked = false;
+		document.getElementById('daring2').checked = true;
+		document.getElementById('daring1').value = "off (" + artist1_name +")";
+		document.getElementById('daring2').value = "on (" + artist2_name +")";
+	}
+}
+function first_title(){		
+	var rand_number = 0;
+	rand_number1 = Math.floor((Math.random()*33));
+	rand_number2 = Math.floor((Math.random()*33));
+	if( rand_number1 == rand_number2 ){
+		rand_number2 = Math.floor((Math.random()*33));
+	}
+	if( rand_number1 == rand_number2 ){
+		if( rand_number2 < 20 )
+			rand_number2 = rand_number2 + 7;
+		else
+			rand_number2 = rand_number2 - 7;
+	}
+
+	document.getElementById("artist1").innerHTML = random_artist( rand_number1 );
+	document.getElementById("artist2").innerHTML = random_artist( rand_number2 );
+	document.getElementById("first_image").innerHTML = "<img src='" + random_image( rand_number1 ) + "' width='165px'/>";
+	document.getElementById("second_image").innerHTML = "<img src='" + random_image( rand_number2 ) + "' width='165px'/>";	
+}
+
+function random_image( rand_number ) {
+	image = new Array(33);
+
+	image[0] = 'http://theuso.files.wordpress.com/2010/07/img_4866.jpg';
+	image[1] = 'http://www.aetv.com/private-sessions/photos/alanis-morissette/alanis-morissette-performs-one-of-her-hit-songs-on-aes-private-sessions.jpg';
+	image[2] = 'http://www.jackfroot.com/wp-content/uploads/2011/02/bruno_mars.jpg';
+	image[3] = 'http://cdn.pastemagazine.com/www/articles/Justin%20Timberlake%20Performs.jpg?1359546833';
+	image[4] = 'http://ronehotspotatl2.files.wordpress.com/2013/03/kendrick-lamar-hottest-mcs.jpg';
+	image[5] = 'http://www.grammy365.com/sites/default/files/tra/allen-stone_.jpg';
+	image[6] = 'http://everythingintime.com/wp-content/uploads/2012/10/tumblr_ma37zgsg1y1qjk5xgo1_12801.jpg';
+	image[7] = 'http://www.aceshowbiz.com/images/wennpic/pitbull-performing-on-stage-08.jpg';
+	image[8] = 'http://cbs1037litefm.files.wordpress.com/2012/08/86003843.jpg';
+	image[9] = 'http://cdn.rap-up.com/blog/wp-content/uploads/jamie-foxx-idol.jpg';
+	image[10] = 'http://www.essence.com/sites/default/files/images/embed/boyz_2_men_performing.jpg';
+	image[11] = 'http://cdn101.iofferphoto.com/img/item/991/865/15/train-soundstage-concert-drops-of-jupiter+more-dvd-c5059.jpg';
+	image[12] = 'http://cbsfresh1027.files.wordpress.com/2012/10/153186354_8.jpg?w=594';
+	image[13] = 'http://thefabempire.com/wp-content/uploads/2012/08/Elle-Varner-guitar.jpg';
+	image[14] = 'http://www.theepochtimes.com/n3/eet-content/uploads/2013/07/NY115-ap-Scouts-Jamboree-3-Doo_Fakk-1024x602.jpg';
+	image[15] = 'http://www.contactmusic.com/pics/m/dream_concert_performance_190907/Dream_Concert_Performance_01_wenn1581551.jpg';
+	image[16] = 'http://ionehellobeautiful.files.wordpress.com/2013/01/miguel-falls-off-stage.jpg';
+	image[17] = 'http://colbiecaillat.fansiter.com/pictures/colbie-caillat.jpg';
+	image[18] = 'http://cdn-0.motorsport.com/static/img/mgl/1000000/1070000/1071000/1071900/1071950/s1_1.jpg';
+	image[19] = 'http://oswego.edu/magazine/wp-content/uploads/2012/08/OAR_img_2917.tif-e1345479707172.jpg';
+	image[20] = 'http://www2.pictures.zimbio.com/gi/Charlie+Wilson+Inside+BET+Awards+5mbNlCrzMDDl.jpg';
+	image[21] = 'http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/a7/dc/a7dc2733262f94ec3bffb49dd1c580d9.jpg?itok=8lQrE9g_';
+	image[22] = 'http://www.soulbounce.com/soul/blog_images/prince_performing-thumb-473x358.jpg';
+	image[23] = 'http://www.arktimes.com/binary/be7f/1286725127-nickelback-live-460-100-460-70.jpg';
+	image[24] = 'http://www.ctnow.com/media/photo/2010-02/23473372680180-21140600.jpg';
+	image[25] = 'http://users.rowan.edu/~weller87/chris_daughtry_american_idol.jpg';
+	image[26] = 'http://images2.mtv.com/uri/mgid:file:docroot:mtv.com:/news/photos/g/grammys_2012/main_show/maroon-5-1.jpg?enlarge=false&matte=true&matteColor=black&quality=0.85';
+	image[27] = 'http://upstatemetal.net/wp-content/uploads/2013/03/POD-5.jpg';
+	image[28] = 'http://backtorockville.typepad.com/back_to_rockville/images/2007/08/29/dmb1.jpg';
+	image[29] = 'http://images.contactmusic.com/newsimages/macy_gray_562090.jpg';
+	image[30] = 'http://en.academic.ru/pictures/enwiki/83/Slash_in_2008.jpg';
+	image[31] = 'http://www.virginmedia.com/images/jackson-memorial-stevie.jpg';
+	image[32] = 'http://www.berkshirefinearts.com/uploadedImages/articles/2513_Steely-Dan594206.jpg';	
+ 	
+ 	return(image[rand_number]);
+ }
+
+ function random_artist( rand_number ) {
+	artist = new Array(33);
+
+	artist[0] = 'Papa Roach';
+	artist[1] = 'Alanis Morissette';
+	artist[2] = 'Bruno Mars';
+	artist[3] = 'Justing Timberlake';
+	artist[4] = 'Kendrick Lamar';
+	artist[5] = 'Allen Stone';
+	artist[6] = 'No Doubt';
+	artist[7] = 'Pitbull';
+	artist[8] = 'Dave Matthews Band';
+	artist[9] = 'Jamie Foxx';
+	artist[10] = 'Boyz II Men';
+	artist[11] = 'Train';
+	artist[12] = 'Lifehouse';
+	artist[13] = 'Elle Varner';
+	artist[14] = '3 Doors Down';
+	artist[15] = 'Joss Stone';
+	artist[16] = 'Miguel';
+	artist[17] = 'Colbie Caillat';
+	artist[18] = 'Carly Rae Jepsen';
+	artist[19] = 'O.A.R. (Of A Revolution)';
+	artist[20] = 'Charlie Wilson';
+	artist[21] = 'Gavin DeGraw';
+	artist[22] = 'Prince';
+	artist[23] = 'Nickelback';
+	artist[24] = 'John Mayer';
+	artist[25] = 'Chris Daughtry';
+	artist[26] = 'Maroon 5';
+	artist[27] = 'P.O.D. (Payable On Death)';
+	artist[28] = 'Dave Matthews Band';
+	artist[29] = 'Macy Gray';
+	artist[30] = 'Slash';
+	artist[31] = 'Stevie Wonder';
+	artist[32] = 'Steely Dan Band';	
+
+ 	return(artist[rand_number]);
+ }
+
+</script>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
